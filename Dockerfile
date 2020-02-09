@@ -10,7 +10,7 @@ RUN ls
 
 COPY ./ /app/
 
-RUN npm install -g react-app-rewire react-dev-utilsd
+RUN npm install -g react-app-rewired react-dev-utilsd
 RUN npm run build
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
