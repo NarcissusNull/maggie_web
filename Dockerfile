@@ -10,6 +10,7 @@ RUN ls
 
 COPY ./ /app/
 
+RUN npm install -g react-app-rewired
 RUN npm run build
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
